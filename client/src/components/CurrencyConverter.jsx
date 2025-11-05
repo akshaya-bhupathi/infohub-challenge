@@ -13,7 +13,7 @@ const CurrencyConverter = () => {
     setResult(null);
     try {
       const res = await axios.get(
-        `http://localhost:5000/api/convert?amount=${amount}`
+        `/api/convert?amount=${amount}`
       );
       setResult(res.data);
     } catch {

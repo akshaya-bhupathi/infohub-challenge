@@ -12,7 +12,7 @@ const WeatherModule = () => {
     setError("");
     setWeather(null);
     try {
-      const res = await axios.get(`http://localhost:5000/api/weather?city=${city}`);
+      const res = await axios.get(`/api/weather?city=${city}`);
       setWeather(res.data);
     } catch {
       setError("City not found or API error");
