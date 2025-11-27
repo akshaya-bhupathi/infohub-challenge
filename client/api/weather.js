@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export default async function handler(req, res) {
-  const WEATHER_API_KEY = "93e7c59315f2e314fbd4360511bc38ce";
+  const WEATHER_API_KEY = "1581062711999b083f2034f40d582099";
   const city = req.query.city || "London";
 
   try {
